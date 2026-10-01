@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Sunday Rundown Draft</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+      background: #f9f9f9;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+    h1 { color: #fd6752; margin-bottom: 0.5rem; }
+    .subtitle { color: #666; margin-bottom: 1.5rem; }
+    h2 { border-bottom: 2px solid #fd6752; padding-bottom: 0.5rem; margin-top: 2rem; }
+    h3 { color: #333; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+
+    /* Copy-paste section at top */
+    .copy-section {
+      background: white;
+      border: 2px solid #fd6752;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .copy-section h2 { border: none; margin-top: 0; }
+    .copy-all-btn {
+      background: #fd6752;
+      color: white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    .copy-all-btn:hover { background: #e55a47; }
+    .copy-all-btn.copied { background: #28a745; }
+    .rundown-content {
+      background: #fafafa;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 1rem;
+      font-size: 0.95rem;
+    }
+    .rundown-content h3 {
+      font-size: 1rem;
+      margin: 1rem 0 0.5rem 0;
+    }
+    .rundown-content h3:first-child { margin-top: 0; }
+    .rundown-content hr {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 1rem 0;
+    }
+    .rundown-content ol { margin: 0.5rem 0; padding-left: 1.5rem; }
+    .rundown-content li { margin: 0.4rem 0; }
+    .rundown-content ol ol { margin: 0.25rem 0; list-style-type: lower-alpha; }
+    .rundown-content a { color: #fd6752; }
+
+    /* Audit trail */
+    .audit { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd; }
+    .audit h2 { color: #666; font-size: 1.1rem; }
+    .item {
+      padding: 0.5rem 0.75rem;
+      margin: 0.25rem 0;
+      border-left: 3px solid #ddd;
+      background: #fafafa;
+      font-size: 0.9rem;
+    }
+    .item.releases { border-left-color: #28a745; }
+    .item.research { border-left-color: #007bff; }
+    .item.resources { border-left-color: #6f42c1; }
+    .item.random { border-left-color: #fd7e14; }
+    .item.excluded { border-left-color: #dc3545; background: #fff5f5; }
+    .tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.1rem 0.4rem;
+      border-radius: 3px;
+      margin-right: 0.5rem;
+      text-transform: uppercase;
+    }
+    .tag-releases { background: #d4edda; color: #155724; }
+    .tag-research { background: #cce5ff; color: #004085; }
+    .tag-resources { background: #e2d9f3; color: #4a2c7a; }
+    .tag-random { background: #ffe5d0; color: #8a4500; }
+    .tag-excluded { background: #f8d7da; color: #721c24; }
+    .reason { color: #666; font-size: 0.85rem; }
+    .totals {
+      background: #e8f4fd;
+      padding: 1rem;
+      border-radius: 6px;
+      margin: 1rem 0;
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .total-item { text-align: center; }
+    .total-num { font-size: 1.3rem; font-weight: 700; color: #fd6752; }
+    .total-label { font-size: 0.75rem; color: #666; }
+  </style>
+</head>
+<body>
+  <h1>Sunday Rundown Draft</h1>
+  <p class="subtitle">FutureTools (futuretools.io/news) — Saturday, Sep 26 to Thursday, Oct 1, 2026 (automated run, Thu Oct 1, 21:00 UTC)</p>
+
+  <!-- COPY-PASTE SECTION (top of page) -->
+  <div class="copy-section">
+    <h2>📋 Ready to Copy</h2>
+    <button class="copy-all-btn" onclick="copyAll()">Copy All One-Liners</button>
+    <div class="rundown-content" id="rundown">
+      <h2>👩‍💻 AI releases</h2>
+      <ol>
+        <li><strong>Anthropic</strong> news:
+          <ol>
+            <li><strong>Claude Code</strong> now supports mods, small TypeScript functions that change how it looks and behaves, and Claude can write them for you. <a href="https://claude.com/blog/claude-code-mods">LINK</a></li>
+            <li><strong>Claude Sonnet 5.5</strong> is a faster, cheaper upgrade to Sonnet 5 that nearly matches Opus 5.5 on everyday knowledge work. <a href="https://www.anthropic.com/claude-sonnet-5-5">LINK</a></li>
+          </ol>
+        </li>
+        <li><strong>ElevenLabs</strong> launched <strong>Eleven v4</strong>, its most expressive text-to-speech model yet, which can clone a voice from just ten seconds of audio. <a href="https://elevenlabs.io/blog/eleven-v4">LINK</a></li>
+        <li><strong>Google</strong> launched <strong>Guided Vision</strong> in Gemini Live on Android, which uses your phone camera to help blind and low-vision users find objects, match outfits, and read fine print. <a href="https://blog.google/innovation-and-ai/products/gemini-app/guided-vision-gemini-live/">LINK</a></li>
+        <li><strong>Ideogram</strong> released <strong>Ideogram 4.5</strong>, an image editing model that keeps your picture consistent across many rounds of edits and works on high-resolution images without shrinking them. <a href="https://ideogram.ai/models/4.5/">LINK</a></li>
+        <li><strong>Instagram</strong> added the <strong>Edits assistant</strong> to its Edits app, which studies how your posts perform and suggests captions, hooks, scripts, and video ideas based on what already works for you. <a href="https://creators.instagram.com/blog/edits-assistant/">LINK</a></li>
+        <li><strong>Microsoft</strong> news:
+          <ol>
+            <li><strong>MAI-Transcribe-2-Streaming</strong> is a real-time transcription model that turns live speech into text in 60 languages. <a href="https://microsoft.ai/news/our-first-streaming-transcription-model/">LINK</a></li>
+            <li><strong>MAI-Voice-2.1</strong> is a text-to-speech model that can match a voice from a short clip, with a faster Flash version for real-time conversations. <a href="https://microsoft.ai/models/mai-voice-2-1/">LINK</a></li>
+          </ol>
+        </li>
+        <li><strong>OpenAI</strong> news:
+          <ol>
+            <li><strong>Dots</strong> are always-on ChatGPT agents with their own cloud computers that learn your preferences and keep working on tasks while you're away. <a href="https://openai.com/index/introducing-dots/">LINK</a></li>
+            <li><strong>GPT-6.1 Sol</strong> nearly matches GPT-6 Astra on coding, computer use, and professional work for one-fifth of the price. <a href="https://openai.com/index/introducing-gpt-6-1-sol/">LINK</a></li>
+            <li><strong>Sign in with ChatGPT</strong> now lets you bring your ChatGPT plan's usage limits into partner apps like Airtable, Notion, and Vercel. <a href="https://help.openai.com/en/articles/20001410-sign-in-with-chatgpt">LINK</a></li>
+          </ol>
+        </li>
+        <li><strong>Shopify</strong> news:
+          <ol>
+            <li><strong>Canvas</strong> lets merchants see and design their entire online store in one visual workspace while the Sidekick AI agent makes changes in real time. <a href="https://www.shopify.com/news/introducing-canvas">LINK</a></li>
+            <li><strong>WebMCP checkout</strong> lets AI browser agents complete purchases on Shopify stores, including with Shop Pay, once the buyer confirms. <a href="https://x.com/gilgNYC/status/2104583942728822998">LINK</a></li>
+          </ol>
+        </li>
+        <li><strong>SpaceXAI</strong> launched <strong>Team Bots</strong>, shared Grok assistants that learn from your team's files and apps and remember context for everyone. <a href="https://x.ai/news/team-bots">LINK</a></li>
+      </ol>
+      <hr>
+      <h2>🔬 AI research</h2>
+      <ol>
+        <li><strong>Google</strong> news:
+          <ol>
+            <li><strong>Gemini 4 Argon</strong> is a new frontier model for long, complex coding and knowledge work, now rolling out to cybersecurity defenders ahead of a public release. <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/">LINK</a></li>
+            <li><strong>Gems</strong> will turn into <strong>Skills</strong> starting November 17, so you'll call up your custom assistants by typing a slash inside any Gemini chat. <a href="https://techcrunch.com/2026/09/28/google-is-killing-off-geminis-gems-in-favor-of-skills/">LINK</a></li>
+          </ol>
+        </li>
+        <li><strong>Runway</strong> opened early access to <strong>Runway Ads</strong>, an AI engine that creates video and image ads, publishes them to Google, Meta, and TikTok, and refines them based on results. <a href="https://runway.com/news/company-news/introducing-runway-ads">LINK</a></li>
+      </ol>
+      <hr>
+      <h2>📖 AI resources</h2>
+      <ol>
+        <li><strong>"GLM-5.3 and the spread of advanced cyber capabilities"</strong> [REPORT]: Anthropic's red-team analysis of how easily the safeguards on a hacking-capable open-weight model can be stripped away. <a href="https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities">LINK</a></li>
+        <li><strong>"Open TTS Leaderboard"</strong> [BENCHMARK]: a Hugging Face leaderboard that compares open text-to-speech models on accuracy, speed, and voice cloning. <a href="https://huggingface.co/blog/open-tts-leaderboard">LINK</a></li>
+      </ol>
+      <hr>
+      <h2>🔀 AI random</h2>
+      <ol>
+        <li><strong>SpaceXAI</strong> owns the domain dot.com, which now redirects to the Grok app, just as OpenAI launched its dots agents. <a href="https://techcrunch.com/2026/09/29/the-internet-is-convinced-elon-musks-xai-trolled-openais-dots-launch/">LINK</a></li>
+        <li><strong>The White House</strong> ordered federal agencies to call AI "Super Intelligence" in official documents, while tech leaders signed a voluntary <strong>Accord on Super Intelligence</strong>. <a href="https://www.whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-inaugurates-the-era-of-super-intelligence/">LINK</a> <a href="https://x.com/JensenHuang/status/2105348324484342238">LINK</a></li>
+      </ol>
+        </div>
+  </div>
+
+  <!-- AUDIT TRAIL (below, for reference) -->
+  <div class="audit">
+    <h2>Audit Trail</h2>
+
+    <div class="totals">
+      <div class="total-item"><div class="total-num">26</div><div class="total-label">Headlines</div></div>
+      <div class="total-item"><div class="total-num">22</div><div class="total-label">Included</div></div>
+      <div class="total-item"><div class="total-num">14</div><div class="total-label">Releases</div></div>
+      <div class="total-item"><div class="total-num">3</div><div class="total-label">Research</div></div>
+      <div class="total-item"><div class="total-num">2</div><div class="total-label">Resources</div></div>
+      <div class="total-item"><div class="total-num">3</div><div class="total-label">Random</div></div>
+    </div>
+
+    <h3>✅ Included</h3>
+    <div class="item releases"><span class="tag tag-releases">Releases</span> Anthropic Launches Claude Code Mods (Oct 1) <span class="reason">— official claude.com post; grouped under Anthropic. Kept despite dev flavor: Claude Code counts as a vibe-coding tool</span></div>
+    <div class="item releases"><span class="tag tag-releases">Releases</span> Anthropic Launches Claude Sonnet 5.5 (Sep 28) <span class="reason">— official anthropic.com page; dropped price and benchmark stats</span></div>
+    <div class="item releases"><span class="tag tag-releases">Releases</span> ElevenLabs Launches Eleven v4 (Sep 28) <span class="reason">— official elevenlabs.io blog</span></div>
+    <div class="item releases"><span class="tag tag-releases">Releases</span> Google Launches Guided Vision in Gemini Live (Oct 1) <span class="reason">— official blog.google. Google is split: Guided Vision is live, Argon and Gems-to-Skills are upcoming, so they go in Research</span></div>
+    <div class="item releases"><span class="tag tag-releases">Releases</span> Ideogram 4.5 Launches (Sep 30) <span class="reason">— official ideogram.ai page ("Try it now"). Free-tier access not confirmed, so no CTA added</span></div>
+    <div class="item releases"><span class="tag tag-releases">Releases</span> Instagram Adds AI Creative Assistant to Edits App (Sep 30) <span class="reason">— FutureTools cited The Verge; swapped for the official Instagram for Creators post (Sep 30). US-only rollout, availability left out per style rule</span></div>
+    <div class="item releases"><span class="tag tag-releases">Releases</span> Microsoft MAI-Transcribe-2-Streaming (Oct 1) <span class="reason">— official microsoft.ai; merged with the MAI-Voice-2.1 item into one Microsoft group. Product name is MAI-Transcribe-2-Streaming per the official page</span></div>
+    <div class="item releases"><span class="tag tag-releases">Releases</span> Microsoft Launches MAI-Voice-2.1 (Oct 1) <span class="reason">— official microsoft.ai model page; also available in Copilot</span></div>
+    <div class="item releases"><span class="tag tag-releases">Releases</span> OpenAI Introduces dots (Sep 29) <span class="reason">— FutureTools headline wrongly called them "specialized tiny networks"; its TLDR and the coverage describe always-on agents. Rolling out to Pro and Business Premium. openai.com returns 403 to bots (URL needs verification, but search confirms it is the official post)</span></div>
+    <div class="item releases"><span class="tag tag-releases">Releases</span> OpenAI Launches GPT-6.1 Sol (Sep 29) <span class="reason">— openai.com 403 to bots (URL needs verification). Available in ChatGPT Work and Codex, not standard Chat yet</span></div>
+    <div class="item releases"><span class="tag tag-releases">Releases</span> OpenAI "Sign in with ChatGPT" (Sep 29) <span class="reason">— re-surfaced item: sign-in launched in July. The new DevDay hook is subscription sharing, so the one-liner leads with that. help.openai.com 403 to bots (URL needs verification)</span></div>
+    <div class="item releases"><span class="tag tag-releases">Releases</span> Shopify Launches Canvas (Oct 1) <span class="reason">— official shopify.com/news; rolling out over the coming days</span></div>
+    <div class="item releases"><span class="tag tag-releases">Releases</span> Shopify WebMCP Checkout Support (Sep 28) <span class="reason">— source is Gil on X (Shopify employee, counts as official). Official dev changelog alternative: shopify.dev/changelog/posts/webmcp-support-for-checkout</span></div>
+    <div class="item releases"><span class="tag tag-releases">Releases</span> xAI Launches Grok Team Bots (Sep 28) <span class="reason">— official x.ai page, which brands the company "SpaceXAI", so the draft uses that name. Public beta on Teams and Enterprise plans</span></div>
+    <div class="item research"><span class="tag tag-research">Research</span> Google Launches Gemini 4 Argon (Sep 30) <span class="reason">— only trusted cyber defenders (Fairwind Program) have access so far, so it goes in Research. Grouped with Gems</span></div>
+    <div class="item research"><span class="tag tag-research">Research</span> Google Replaces Gems with Skills (Sep 28) <span class="reason">— no official post (only an in-app notice). Kept the TechCrunch link; 9to5google broke it first (9to5google.com/2026/09/27/gemini-gems-skills/)</span></div>
+    <div class="item research"><span class="tag tag-research">Research</span> Runway Launches Runway Ads (Sep 30) <span class="reason">— piloting with select enterprise partners, so it goes in Research</span></div>
+    <div class="item resources"><span class="tag tag-resources">Resources</span> Anthropic GLM-5.3 cyber capabilities report (Sep 29) <span class="reason">— official anthropic.com research post. Could go to Random instead</span></div>
+    <div class="item resources"><span class="tag tag-resources">Resources</span> "Open TTS Leaderboard" (Sep 30) (via HuggingFace) <span class="reason">— HF blog post; the leaderboard space is huggingface.co/spaces/hf-audio/open_tts_leaderboard</span></div>
+    <div class="item random"><span class="tag tag-random">Random</span> xAI's dot.com redirects to Grok ahead of OpenAI Dots (Sep 29) <span class="reason">— TechCrunch (no official source exists for this kind of story). A low-stakes curiosity; cut it if Random feels crowded</span></div>
+    <div class="item random"><span class="tag tag-random">Random</span> Trump EO renaming AI to "Super Intelligence" (Sep 29) + White House Accord on Super Intelligence (Sep 30 item) <span class="reason">— combined into one story. Two links: the official whitehouse.gov fact sheet (swapped in for FutureTools' Verge link) and Jensen Huang's X post on the Accord</span></div>
+
+    <h3>❌ Excluded</h3>
+    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> Strands Releases Decider 2B (Oct 1) <span class="reason">— developer-only decision model, not usable by average users</span></div>
+    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> Inception Labs Mercury Voice (Sep 30) <span class="reason">— enterprise and developer voice-agent model</span></div>
+    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> OpenAI Decisions API (Sep 29) <span class="reason">— developer API in limited preview</span></div>
+    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> World Labs Acquired by AMD (Sep 28) <span class="reason">— M&amp;A</span></div>
+    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> NVIDIA Open Agent Safety Platform (Sep 28) <span class="reason">— enterprise infrastructure and hardware</span></div>
+
+    <h3>📝 Notes for Daniel</h3>
+    <div class="item"><strong>Date coverage:</strong> FutureTools page 1 runs from Oct 1 back to Sep 25. Nothing is dated Sat Sep 26 or Sun Sep 27 (FutureTools notes that weekends update slower). Earliest in-range item: Mon Sep 28. Items dated Sep 25 and earlier were left out.</div>
+    <div class="item"><strong>Not on FutureTools:</strong> per the Axios and Memeburn DevDay recaps, OpenAI DevDay (Sep 29) also launched ChatGPT Space and Pages, Codex in the cloud, a $500 Pro tier and the OpenAI Marketplace. Not included (FutureTools-only run); worth a look before publishing.</div>
+    <div class="item"><strong>Resource hunt:</strong> HuggingFace blog gave the Open TTS Leaderboard. The HN search turned up Real-SWE, but it was posted about 18 days ago, outside this range. No in-range videos found from Karpathy, Two Minute Papers, AI Explained or Yannic Kilcher.</div>
+    <div class="item"><strong>Automated run:</strong> the skill's "ask for additional items" and "ask for feedback" steps were skipped. Later Friday and Saturday items still need adding by hand before Sunday.</div>
+  </div>
+
+  <script>
+    function copyAll() {
+      const content = document.getElementById('rundown');
+      const html = content.innerHTML;
+      const text = content.innerText;
+
+      // Copy as rich text (HTML) so formatting pastes into Substack
+      const blob = new Blob([html], { type: 'text/html' });
+      const textBlob = new Blob([text], { type: 'text/plain' });
+      const clipboardItem = new ClipboardItem({
+        'text/html': blob,
+        'text/plain': textBlob
+      });
+
+      navigator.clipboard.write([clipboardItem]).then(() => {
+        const btn = document.querySelector('.copy-all-btn');
+        btn.textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.textContent = 'Copy All One-Liners';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
