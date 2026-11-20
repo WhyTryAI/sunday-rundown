@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="robots" content="noindex, nofollow">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
   <title>Sunday Rundown Draft</title>
   <style>
     * { box-sizing: border-box; }
@@ -79,7 +79,15 @@
     .item.resources { border-left-color: #6f42c1; }
     .item.random { border-left-color: #fd7e14; }
     .item.excluded { border-left-color: #dc3545; background: #fff5f5; }
-    .for-daniel { background: #fff8e6; border: 1px solid #f0c36d; border-radius: 8px; padding: 1rem 1.5rem; margin-bottom: 2rem; }
+
+    /* For Daniel: post-delivery handoff, outside the copy area */
+    .for-daniel {
+      background: #fff8e6;
+      border: 1px solid #f0c36d;
+      border-radius: 8px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 2rem;
+    }
     .for-daniel h2 { border: none; margin-top: 0; font-size: 1.1rem; }
     .for-daniel h3 { font-size: 0.95rem; margin: 1rem 0 0.3rem 0; }
     .for-daniel ul { margin: 0.3rem 0; padding-left: 1.3rem; font-size: 0.9rem; }
@@ -114,84 +122,99 @@
 </head>
 <body>
   <h1>Sunday Rundown Draft</h1>
-  <p class="subtitle">FutureTools + TLDR AI — Saturday, November 7 to Friday, November 13, 2026</p>
+  <p class="subtitle">FutureTools + TLDR AI — Saturday, November 14 to Friday, November 20, 2026</p>
 
   <!-- COPY-PASTE SECTION (top of page) -->
   <div class="copy-section">
     <h2>📋 Ready to Copy</h2>
     <button class="copy-all-btn" onclick="copyAll()">Copy All One-Liners</button>
     <div class="rundown-content" id="rundown">
-      <h2>👩‍💻 AI releases</h2>
-      <ol>
-        <li><strong>Adobe</strong> news:
-          <ol>
-            <li><strong>Creative Agent</strong> now works across Adobe's flagship desktop apps like Illustrator and Premiere, handling multi-step edits while you stay in charge. <a href="https://news.adobe.com/news/2026/11/adobe-transforms-creative-cloud-tools">LINK</a></li>
-            <li><strong>Firefly</strong> is now a full AI creative studio where you can mix Adobe's tools with partner models like GPT Image 2.6 and Kling 4.0 on one canvas. <a href="https://news.adobe.com/news/2026/11/adobe-firefly-expands">LINK</a></li>
-          </ol>
-        </li>
-        <li><strong>Anthropic</strong> news:
-          <ol>
-            <li><strong>Claude Fable 5.2</strong> is a faster and cheaper upgrade to Anthropic's most capable public model, with better coding, reasoning, and vision. <a href="https://www.anthropic.com/claude-fable-and-mythos-5-2">LINK</a></li>
-            <li><strong>Claude Sheets</strong> and <strong>Claude Whiteboards</strong> let paid users build shared spreadsheets and whiteboards from a prompt, then export them to tools like Excel or Miro. <a href="https://claude.com/resources/articles/sheets-whiteboards-data">LINK</a></li>
-            <li><strong>Interactive connectors</strong> let you open apps like Canva and Notion right inside Claude and watch it edit your files in real time. <a href="https://claude.com/resources/articles/interactive-connectors-full-tool">LINK</a></li>
-          </ol>
-        </li>
-        <li><strong>Automattic</strong> launched <strong>Spacefast</strong>, a free-to-start home where your AI assistant can publish the apps and websites it builds and hand you a shareable link. <a href="https://automattic.com/2026/11/09/meet-spacefast/">LINK</a></li>
-        <li><strong>Edge0</strong> open-sourced <strong>Edge0-145B</strong>, a coding and reasoning model built to run offline on a high-end laptop through a free desktop app. <a href="https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer">LINK</a></li>
-        <li><strong>Google</strong> news:
-          <ol>
-            <li><strong>Flow</strong> got five new creative tools designed by artists, including one that turns a single phone shot into multiple camera angles. <a href="https://blog.google/innovation-and-ai/models-and-research/google-labs/new-google-flow-tools/">LINK</a></li>
-            <li><strong>Gemini 4 Carbon</strong> is Google's new strongest model, now rolling out to AI Ultra subscribers in the Gemini app and AI Mode in Search. <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/">LINK</a></li>
-            <li><strong>Gemini 4 Hydrogen</strong> is a fast everyday model in the Gemini app that also powers a Search upgrade built to handle messy, multi-part questions. <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/">LINK</a></li>
-            <li><strong>Gemini Intelligence</strong> on Pixel 10 phones can now turn your spoken rambling into tidy written text as you talk. <a href="https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/">LINK</a></li>
-            <li><strong>Gemini on Apple CarPlay</strong> brings hands-free Gemini Live conversations to iPhone users while they drive. <a href="https://blog.google/innovation-and-ai/products/gemini-app/gemini-on-apple-carplay/">LINK</a></li>
-          </ol>
-        </li>
-        <li><strong>Meta</strong> released <strong>Muse Ember</strong>, its smallest and cheapest multimodal model, built for quick high-volume jobs like coding subtasks and document analysis. <a href="https://dev.meta.ai/resources/blog/build-with-muse-ember">LINK</a></li>
-        <li><strong>MiniMax</strong> open-sourced <strong>H3-Image</strong>, a 4K image model that can work from up to 16 reference images and finish a picture in about ten seconds. <a href="https://x.com/MiniMax_AI/status/2120179737695826420">LINK</a></li>
-        <li><strong>Nuance Labs</strong> launched <strong>Emma</strong>, a video AI persona that reacts with facial expressions and times its replies like a person on a video call. (Try it for free.) <a href="https://x.com/nuance_ai/status/2119961538928996839">LINK</a></li>
-        <li><strong>OpenAI</strong> launched <strong>Businesses in ChatGPT</strong> in beta, letting US businesses claim their profile and build branded agents that answer customer questions inside ChatGPT. <a href="https://openai.com/index/introducing-businesses-chatgpt/">LINK</a></li>
-      </ol>
-      <hr>
-      <h2>🔬 AI research</h2>
-      <ol>
-        <li><strong>Adobe</strong> previewed its experimental <strong>MAX Sneaks</strong>, including Project Sight Span, which turns a flat photo or painting into a 3D scene you can move through. <a href="https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai">LINK</a></li>
-        <li><strong>ElevenLabs</strong> opened early access to <strong>ElevenAI</strong>, a free desktop app that handles dictation and meeting notes using context from your past conversations. <a href="https://elevenlabs.io/elevenai">LINK</a></li>
-        <li><strong>Google</strong> opened a waitlist for <strong>Tabletop</strong>, a Labs experiment that builds shared group spaces like expense splitters and trip planners from a prompt. <a href="https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop">LINK</a></li>
-      </ol>
-      <hr>
-      <h2>📖 AI resources</h2>
-      <ol>
-        <li><strong>&quot;Fable 5.2: The Self-Improvement Loop Keeps Loopin’&quot;</strong> [VIDEO]: AI Explained's breakdown of Claude Fable 5.2 and Gemini 4 Carbon. <a href="https://www.youtube.com/watch?v=583ThJIqQ7k">LINK</a></li>
-        <li><strong>&quot;MotionGraphicsBench&quot;</strong> [BENCHMARK]: a set of 100 tasks by Figma and Stanford that tests how well AI models can animate a static graphic from a text prompt. <a href="https://huggingface.co/blog/figma-ai/motion-graphics-bench">LINK</a></li>
-      </ol>
-      <hr>
-      <h2>🔀 AI random</h2>
-      <ol>
-        <li><strong>Nvidia</strong> CEO <strong>Jensen Huang</strong> resigned effective immediately after US officials linked him to an alleged Chinese intelligence asset, with CFO Colette Kress stepping in as interim CEO. <a href="https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition">LINK</a></li>
-        <li><strong>United Airlines</strong> banned third-party AI agents from booking flights on behalf of travelers, citing security risks. <a href="https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/">LINK</a></li>
-      </ol>
+<h2>👩‍💻 AI releases</h2>
+<ol>
+<li><strong>Alibaba</strong> released <strong>Qwen4-Max</strong>, which it calls "the most capable model in the Qwen family to date," with a focus on coding and visual reasoning. <a href="https://www.alibabacloud.com/press-room/alibaba-unveils-qwen4-max">LINK</a></li>
+<li><strong>Anthropic</strong> moved <strong>Claude Design</strong> into the main Claude app, where new designs and slide decks now live as artifacts before the standalone site closes on December 14. <a href="https://support.claude.com/en/articles/17440474-move-from-standalone-claude-design-to-claude">LINK</a></li>
+<li><strong>Audible</strong> launched <strong>audio discovery</strong>, short AI-narrated previews that pair an audiobook sample with a quick take on what listeners like about it. <a href="https://www.audible.com/about/newsroom/audible-personalizes-how-listeners-find-explore-and-return-to-stories">LINK</a></li>
+<li><strong>Google</strong> news:
+<ol>
+<li><strong>AI Mode</strong> in Search now offers temporary threads for questions you don't want saved to your history or used to personalize results. <a href="https://blog.google/products-and-platforms/products/search/temporary-threads-ai-mode/">LINK</a></li>
+<li><strong>Gemini 4 Neon</strong> is Google's new fast frontier model for coding and analysis, now in the Gemini app for paid subscribers. <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/">LINK</a></li>
+<li><strong>Gemini for Mac</strong> can now handle repetitive tasks by clicking and typing through your apps in a separate window while you keep working. <a href="https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/">LINK</a></li>
+<li><strong>Gemini Notebook</strong> can turn your notes and sources into interactive sites, such as a study timeline or a project tracker. <a href="https://blog.google/innovation-and-ai/products/gemini-notebook/interactive-sites/">LINK</a></li>
+<li><strong>Genie 4</strong> lets AI Ultra subscribers generate interactive worlds and reshape them mid-session just by typing. <a href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/">LINK</a></li>
+<li><strong>Tasks in Gemini</strong> is now free in six countries and can call businesses or book appointments on your behalf. <a href="https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/">LINK</a></li>
+</ol></li>
+<li><strong>HeyGen</strong> launched <strong>Avatar 6</strong>, which turns a single photo into a realistic talking avatar video with no length limit. <a href="https://www.heygen.com/research/avatar-6-model">LINK</a></li>
+<li><strong>Microsoft</strong> released <strong>MAI Image 2.7</strong>, an image generation and editing model you can play with in its new Canvas workspace. <a href="https://microsoft.ai/news/introducing-mai-image-2-7/">LINK</a></li>
+<li><strong>OpenAI</strong> news:
+<ol>
+<li><strong>ChatGPT</strong> dictation now turns your speech into text in real time as you talk instead of after you finish. <a href="https://x.com/ChatGPT/status/2123114715257946334">LINK</a></li>
+<li><strong>GPT-6.2 Astra</strong> and <strong>GPT-6.2 Sol</strong> are OpenAI's newest models, with Astra built for the hardest professional projects and Sol for everyday work. <a href="https://openai.com/index/introducing-gpt-6-2-astra-sol/">LINK</a></li>
+</ol></li>
+<li><strong>Perplexity</strong> added a <strong>Multiagent</strong> effort level to Perplexity Computer, where agents running different frontier models split up a task and check each other's work. <a href="https://www.perplexity.ai/hub/blog/introducing-computer-multiagent">LINK</a></li>
+<li><strong>Proton</strong> launched <strong>Lumo Desktop</strong>, a privacy-focused AI assistant for your computer that lets you decide which actions it can take without asking. <a href="https://proton.me/blog/lumo-desktop-features">LINK</a></li>
+<li><strong>Replit</strong> launched <strong>Missions</strong>, which points a swarm of AI agents at a goal you set and keeps them within the budget you choose. <a href="https://replit.com/blog/introducing-replit-missions">LINK</a></li>
+<li><strong>Slack</strong> turned into an <strong>automation hub</strong> for AI agents, so you can schedule recurring jobs for Slackbot and third-party agents without code. <a href="https://x.com/SlackHQ/status/2123178841858613469">LINK</a></li>
+<li><strong>Suno</strong> launched <strong>Visuals</strong>, which turns your songs into lyric videos and short clips that lip sync to the words. <a href="https://suno.com/blog/introducing-visuals">LINK</a></li>
+</ol>
+<hr>
+<h2>🔬 AI research</h2>
+<ol>
+<li><strong>Gallium Studios</strong> teased <strong>MyMems</strong>, a Will Wright game coming in 2027 that turns memories you speak into your phone into a personal sim world. <a href="https://www.theverge.com/games/1036140/will-wright-mymems-ai-game-interview">LINK</a></li>
+<li><strong>Google</strong> opened a waitlist for <strong>Stitch Loop</strong>, an always-on Labs agent that keeps improving your live product by suggesting changes and writing the code. <a href="https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-loop/">LINK</a></li>
+</ol>
+<hr>
+<h2>📖 AI resources</h2>
+<ol>
+<li><strong>&quot;An update on the state of research acceleration at OpenAI&quot;</strong> [REPORT]: a look at how much of OpenAI's own research work its AI agents can now handle alone. <a href="https://openai.com/index/research-acceleration-jagged-frontier/">LINK</a></li>
+<li><strong>&quot;Anthropic IPOs, GPT 6.2 Astra Arrives, But There’s a Bigger Story&quot;</strong> [VIDEO]: AI Explained's take on the week's frontier models and what's driving their progress. <a href="https://www.youtube.com/watch?v=583ThJIqQ7k">LINK</a></li>
+<li><strong>&quot;World 2030&quot;</strong> [SIMULATION]: an interactive scenario that runs the US economy forward to 2030 to test how AI changes jobs and prices, by Strange Loop Canon. <a href="https://world-2030.pages.dev/">LINK</a></li>
+</ol>
+<hr>
+<h2>🔀 AI random</h2>
+<ol>
+<li><strong>Anthropic</strong> officially went public, trading on the Nasdaq under the ticker "ANT". <a href="https://www.theverge.com/ai-artificial-intelligence/1035384/anthropic-ipo-trading-nasdaq">LINK</a></li>
+</ol>
     </div>
   </div>
 
   <div class="for-daniel" id="for-daniel">
     <h2>🙋 For Daniel</h2>
     <h3>Check these links</h3>
-    <ul><li><a href="https://openai.com/index/introducing-businesses-chatgpt/">OpenAI Businesses in ChatGPT</a>: openai.com returns 403 to cloud fetches</li>
-    <li><a href="https://x.com/MiniMax_AI/status/2120179737695826420">MiniMax H3-Image</a> and <a href="https://x.com/nuance_ai/status/2119961538928996839">Nuance Emma</a>: X posts return 402, so the details come from summaries</li></ul>
+    <ul>
+      <li><a href="https://openai.com/index/introducing-gpt-6-2-astra-sol/">GPT-6.2 Astra and Sol</a> and <a href="https://openai.com/index/research-acceleration-jagged-frontier/">OpenAI research acceleration report</a>: openai.com returns 403 to cloud fetches, so details come from FutureTools and TLDR summaries.</li>
+      <li><a href="https://microsoft.ai/news/introducing-mai-image-2-7/">Microsoft MAI Image 2.7</a>: microsoft.ai returns 403 (Cloudflare). The Canvas workspace detail comes from press coverage; one source says Canvas runs in MAI Labs for personal use only.</li>
+      <li><a href="https://x.com/ChatGPT/status/2123114715257946334">ChatGPT Live Dictation</a> and <a href="https://x.com/SlackHQ/status/2123178841858613469">Slack automation hub</a>: X posts; only the first line was readable, the rest comes from summaries. No official Slack blog post found.</li>
+      <li><a href="https://www.theverge.com/games/1036140/will-wright-mymems-ai-game-interview">MyMems</a>: The Verge interview is the only source found (no Gallium Studios announcement).</li>
+    </ul>
     <h3>Borderline calls</h3>
-    <ul><li>OpenAI Businesses in ChatGPT: kept in Releases because shoppers meet the agents inside ChatGPT, but it's B2B at heart</li>
-    <li>Nvidia/Huang resignation in Random: big industry drama, but a personnel story</li>
-    <li>Only 2 Resources: it was a quiet week, so none were forced</li></ul>
+    <ul>
+      <li>Anthropic Nasdaq debut in Random: you cut an IPO item on Nov 8, but going public is a bigger moment than a filing. Cut if it still doesn't fit.</li>
+      <li>Replit Missions: aimed at teams and business goals, kept because Replit is a vibe-coding tool for non-developers.</li>
+      <li>Microsoft MAI Image 2.7: mostly a developer launch (Foundry), kept for the Canvas workspace. Microsoft's other six Ignite models (code, cyber, voice) were left out as enterprise.</li>
+      <li>Google group has six sub-bullets. Stitch Loop went to Research (waitlist) instead of riding with the group.</li>
+      <li>Claude Design move: support article dated around Nov 15. It's a change to an existing product, so you might prefer it as a one-line heads-up in Random.</li>
+    </ul>
     <h3>Left out, might want</h3>
-    <ul><li><a href="https://www.anthropic.com/news/roadshow-launch">Anthropic IPO roadshow</a> (Nasdaq "ANT"): you cut last week's IPO item</li>
-    <li><a href="https://blog.claroc.io/ghostshares-grok-build-apps">35,000 Grok-built apps open to anyone with the link</a>: possible Random</li>
-    <li>Grok Bot 1.0 out of beta (<a href="https://flaviocopes.com/grok-bot-1-0/">third-party post</a>): no official confirmation, because x.ai blocks fetches</li></ul>
+    <ul>
+      <li><a href="https://www.anthropic.com/research/claude-black-hole-physics">Claude Fable 5.2 solves two open black hole physics problems</a>: scientific, but a possible Random "huh" item (476 points on HN).</li>
+      <li><a href="https://revscope.co/blog/search-seo-geo-2026/">Google AI Overviews cut clicks to websites by about 40%</a>: randomized experiment, but a short write-up, not a full resource.</li>
+      <li><a href="https://www.youtube.com/watch?v=KmeOD4SkBXg">Futurepedia: Claude Design is Shutting Down - Do This Now</a>: [VIDEO] candidate, left out because Claude Design is already in Releases.</li>
+      <li><a href="https://openai.com/index/introducing-chatgpt-for-sales/">ChatGPT for Sales</a>, <a href="https://openai.com/index/astra-law-6-2/">Astra for Law</a> and <a href="https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare/">ChatGPT for Healthcare agents</a>: Business/Enterprise only.</li>
+      <li><a href="https://www.tencent.com/tencent-launches-hy4-flash-to-power-high-speed-cost-efficient-ai-deployment-for-everyday-workflows/">Tencent Hy4 flash</a> and <a href="https://sevren.ai/blog/embla-1">Sevren Embla 1</a> (free reasoning model that runs offline on phones): smaller model launches.</li>
+      <li><a href="https://x.com/JensenHuang/status/2122726005219737649">Jensen Huang open to returning as Nvidia CEO</a> and <a href="https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/">California AG sues OpenAI over rogue agent incidents</a>: drama/legal follow-ups.</li>
+      <li><a href="https://www.apple.com/newsroom/2026/11/apple-launches-research-study-to-explore-the-use-of-ai-for-health/">Apple Health AI Usage Study</a>: 200K US users can join and ask health questions; health-adjacent.</li>
+      <li>From Nov 12-13, not in last Sunday's post: <a href="https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/">Meta Muse can call businesses</a>, <a href="https://x.com/theworldlabs/status/2120942033401717108">World Labs Atlas opens to the public</a>, <a href="https://x.com/ClaudeDevs/status/2121392666244186327">Claude Code desktop custom themes</a>.</li>
+    </ul>
     <h3>Coverage gaps</h3>
-    <ul><li>TLDR AI for Nov 13 wasn't up yet. Anything from later Friday and Saturday needs adding by hand (or with an "Update").</li></ul>
+    <ul>
+      <li>TLDR AI for Nov 20 wasn't up yet (redirects to /ai). Anything from later Friday and Saturday needs adding by hand (or with an "Update").</li>
+    </ul>
     <h3>Setup fixes</h3>
-    <ul><li>Karpathy and Futurepedia YouTube feed IDs were stale. Fixed in the skill on 2026-11-13, so they weren't checked this week.</li></ul>
-    <p class="reason">Feedback on wording or categorization, or a post-publish review, goes into the skill in the next session.</p>
+    <ul>
+      <li>resource-hunt.md, Futurepedia ID: <code>UCoM9lSqWLBEmhpPW1M83E6A</code> feeds an unrelated "Future Pedia" channel. The real one (@futurepedia_io) is <code>UC_RovKmk0OCbuZjA8f08opw</code>. Used the correct ID this run.</li>
+      <li>resource-hunt.md, Yannic Kilcher ID: <code>UCHmD-oSpV0sNfAUnpYpj8KA</code> is his "Yannic Out Of Distribution" vlog channel. Main channel is <code>UCZHmQk67mSJgfCCTn7xBfew</code>.</li>
+    </ul>
+    <p class="reason">Feedback on wording or categorization, or a post-publish review (skill Mode 3), goes into the skill in your next session.</p>
   </div>
 
   <!-- AUDIT TRAIL (below, for reference) -->
@@ -199,73 +222,58 @@
     <h2>Audit Trail</h2>
 
     <div class="totals">
-      <div class="total-item"><div class="total-num">37 FT + 13 other</div><div class="total-label">Headlines</div></div>
-      <div class="total-item"><div class="total-num">23</div><div class="total-label">Included</div></div>
-      <div class="total-item"><div class="total-num">16</div><div class="total-label">Releases</div></div>
-      <div class="total-item"><div class="total-num">3</div><div class="total-label">Research</div></div>
-      <div class="total-item"><div class="total-num">2</div><div class="total-label">Resources</div></div>
-      <div class="total-item"><div class="total-num">2</div><div class="total-label">Random</div></div>
+      <div class="total-item"><div class="total-num">45 FT + 63 TLDR</div><div class="total-label">Headlines</div></div>
+      <div class="total-item"><div class="total-num">24</div><div class="total-label">Included</div></div>
+      <div class="total-item"><div class="total-num">18</div><div class="total-label">Releases</div></div>
+      <div class="total-item"><div class="total-num">2</div><div class="total-label">Research</div></div>
+      <div class="total-item"><div class="total-num">3</div><div class="total-label">Resources</div></div>
+      <div class="total-item"><div class="total-num">1</div><div class="total-label">Random</div></div>
     </div>
 
     <h3>✅ Included</h3>
-    <div class="item releases"><span class="tag tag-releases">Releases</span> Adobe MAX 2026: Creative Agent across Creative Cloud (+ duplicate Firefly/MAX umbrella items merged) <span class="reason">— official Adobe newsroom; Creative Cloud features GA, AI Assistants in beta</span></div>
-    <div class="item releases"><span class="tag tag-releases">Releases</span> Adobe Firefly adds Creative Agent, Quick Actions & Firefly Graph <span class="reason">— official; partner models GPT Image 2.6 / Kling 4.0</span></div>
-    <div class="item releases"><span class="tag tag-releases">Releases</span> Anthropic Launches Claude Fable 5.2 & Mythos 5.2 <span class="reason">— Fable is generally available; Mythos only via verification programs, so the one-liner names Fable only. Electronics-prototype research post folded in (not a separate entry)</span></div>
-    <div class="item releases"><span class="tag tag-releases">Releases</span> Claude Sheets, Whiteboards & Data (3 FT items merged) <span class="reason">— used the sheets-whiteboards-data article; Claude Data/dashboards left out to keep it short</span></div>
-    <div class="item releases"><span class="tag tag-releases">Releases</span> Claude interactive connectors (open & edit Notion, Canva etc. in chat) <span class="reason">— all plans, web + desktop</span></div>
-    <div class="item releases"><span class="tag tag-releases">Releases</span> Automattic Launches Spacefast <span class="reason">— FT linked TechCrunch; swapped to official automattic.com post</span></div>
-    <div class="item releases"><span class="tag tag-releases">Releases</span> Edge0-145B (via HN, 220 pts) <span class="reason">— official edge0.ai blog; app on GitHub, open weights on HF</span></div>
-    <div class="item releases"><span class="tag tag-releases">Releases</span> Google Flow: five new artist-built tools (via blog.google, found on Tabletop page) <span class="reason">— not on FutureTools or TLDR</span></div>
-    <div class="item releases"><span class="tag tag-releases">Releases</span> Google Launches Gemini 4 Carbon <span class="reason">— AI Ultra subscribers in Gemini app + AI Mode</span></div>
-    <div class="item releases"><span class="tag tag-releases">Releases</span> Gemini 4 Hydrogen (2 FT items merged) + Search upgrade post <span class="reason">— Search post: https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/ (alternative link if Daniel wants the Search angle)</span></div>
-    <div class="item releases"><span class="tag tag-releases">Releases</span> Gemini Intelligence expands to Pixel 10 / Motorola Signature 27 <span class="reason">— described Rambler without naming it; Create My Widget still rolling out</span></div>
-    <div class="item releases"><span class="tag tag-releases">Releases</span> Gemini app on Apple CarPlay <span class="reason">— official</span></div>
-    <div class="item releases"><span class="tag tag-releases">Releases</span> Meta Launches Muse Ember <span class="reason">— official dev.meta.ai; also at research.meta.ai/blog/muse-ember (TLDR link)</span></div>
-    <div class="item releases"><span class="tag tag-releases">Releases</span> MiniMax Launches H3-Image <span class="reason">— official MiniMax X post (X returns 402 to fetchers, so content taken from FT summary; URL needs verification)</span></div>
-    <div class="item releases"><span class="tag tag-releases">Releases</span> Nuance Labs Launches Emma <span class="reason">— official X post; free to try at emma.nuancelabs.ai per secondary coverage (URL needs verification: X not fetchable)</span></div>
-    <div class="item releases"><span class="tag tag-releases">Releases</span> OpenAI Launches "Businesses in ChatGPT" Beta <span class="reason">— openai.com returns 403 to scripts; details from FT summary (URL needs verification). Borderline B2B, kept for consumer-facing agents in ChatGPT</span></div>
-    <div class="item research"><span class="tag tag-research">Research</span> Adobe Max 2026 Sneaks <span class="reason">— no official Adobe Sneaks post found; Verge kept</span></div>
-    <div class="item research"><span class="tag tag-research">Research</span> ElevenAI early access (via TLDR) <span class="reason">— announced at ElevenLabs Summit NYC Nov 11; early access = Research</span></div>
-    <div class="item research"><span class="tag tag-research">Research</span> Google Launches Tabletop <span class="reason">— FT linked The Verge; swapped to official blog.google post; US 18+ waitlist</span></div>
-    <div class="item resources"><span class="tag tag-resources">Resources</span> AI Explained: "Fable 5.2: The Self-Improvement Loop Keeps Loopin’" (via YouTube: AI Explained) <span class="reason">— published Nov 10</span></div>
-    <div class="item resources"><span class="tag tag-resources">Resources</span> MotionGraphicsBench (via HuggingFace) <span class="reason">— Figma + Stanford, Nov 10</span></div>
-    <div class="item random"><span class="tag tag-random">Random</span> NVIDIA CEO Jensen Huang resigns (5 Huang/Nvidia FT items merged) <span class="reason">— official Nvidia transition release; spy-link context from FT/Reuters/NYT coverage</span></div>
-    <div class="item random"><span class="tag tag-random">Random</span> United Airlines bans AI agents from booking flights (via TLDR + HN 669 pts) <span class="reason">— no official United statement found; CBS kept</span></div>
-
-    <p class="reason">Notes: no FutureTools items dated Nov 7 or Nov 13; TLDR AI for Nov 13 was not yet published at run time. Two YouTube feed IDs in the skill now resolve to other channels (Karpathy ID → 3Blue1Brown, Futurepedia ID → Skill Leap AI), so those two were not checked.</p>
-    <h3>❌ Excluded</h3>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> Gemini-powered smart glasses pre-orders <span class="reason">— hardware</span></div>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> Runway Praxis-1 open-weight robotics model <span class="reason">— robotics</span></div>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> OpenAI $2M pledge to children's AI safety coalition <span class="reason">— funding/policy statement</span></div>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> Nvidia Huang affair/spy reports (Reuters, NYT, The Information, Nvidia statement) <span class="reason">— merged into Random Nvidia entry</span></div>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> ElevenLabs ElevenAgents Campaign Manager <span class="reason">— enterprise outbound-call tool</span></div>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> DeepMind AlphaGenome 2 <span class="reason">— scientific application</span></div>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> Google Gemini Decisions API <span class="reason">— developer API</span></div>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> Google Cloud Gemini for Healthcare <span class="reason">— enterprise healthcare</span></div>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> Anthropic IPO roadshow (Nasdaq "ANT") <span class="reason">— financial; Daniel cut last week's IPO item. Borderline for Random if he wants it: https://www.anthropic.com/news/roadshow-launch</span></div>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> NVIDIA Alpamayo 2 Edge <span class="reason">— autonomous-vehicle hardware</span></div>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> OpenAI Control Room <span class="reason">— internal safety infrastructure</span></div>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> Google Maps Platform in AI Studio <span class="reason">— developer-facing</span></div>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> ChatGPT Enterprise on AWS Marketplace <span class="reason">— enterprise procurement</span></div>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> Claude Fable 5.2 designs electronic prototypes <span class="reason">— folded into Fable 5.2 entry</span></div>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> OpenAI raises $11B (via TLDR) <span class="reason">— funding</span></div>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> OpenRouter Auto/Auto Code routers (via TLDR) <span class="reason">— developer tool</span></div>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> GitHub Next Ace (via TLDR) <span class="reason">— developer tool</span></div>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> Google TPU 8i Max / 8tx (via TLDR) <span class="reason">— hardware</span></div>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> Apple $50 AI usage packs in Logic Pro (via TLDR) <span class="reason">— pricing</span></div>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> Anthropic $3.4B gas generators (via TLDR) <span class="reason">— infrastructure/business</span></div>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> MAI-Transcribe-2 (via TLDR) <span class="reason">— launched September 3; not new this week (microsoft.ai returned 403)</span></div>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> OpenAI acquires Odessia (via TLDR) <span class="reason">— acquisition</span></div>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> 35,000 Grok-built apps exposed (via TLDR) <span class="reason">— third-party security write-up; possible Random if Daniel wants it: https://blog.claroc.io/ghostshares-grok-build-apps</span></div>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> Grok Bot 1.0 (via TLDR, flaviocopes.com) <span class="reason">— could not confirm an official 1.0 announcement (x.ai blocks fetches); worth a manual check</span></div>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> OpenAI MCP Extensions, A2UI 1.0, ExecuTorch WebGPU, Meta e-means (via TLDR) <span class="reason">— developer tools</span></div>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> Google DeepMind AlphaProof Code verifies Signal (via TLDR) <span class="reason">— research/security niche</span></div>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> Fireworks AI security incident / Notion (via TLDR + HN) <span class="reason">— vendor security incident</span></div>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> Apple "Harbor" local-model Mac app (via HN, 9to5Mac) <span class="reason">— leak, not an announcement</span></div>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> MaxxBench (via HN) <span class="reason">— published October 20, outside range</span></div>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> Essays and opinion pieces (RSI timelines, AI bubble, Patrick Collison, etc.) <span class="reason">— opinion, not resources</span></div>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> Yogurt open-source Granola alternative (Show HN) <span class="reason">— small hobby project</span></div>
-    <div class="item excluded"><span class="tag tag-excluded">Excluded</span> My AI agents found an unmapped Maya site? (HN) <span class="reason">— personal blog curiosity, unverified claim</span></div>
+<div class="item releases"><span class="tag tag-releases">Releases</span> Qwen4-Max (via TLDR) <span class="reason">— Alibaba Cloud press release; qwen.ai blog is a JS SPA</span></div>
+<div class="item releases"><span class="tag tag-releases">Releases</span> Claude Design moves into Claude (via YouTube: Futurepedia) <span class="reason">— not on FT/TLDR; official help-center article</span></div>
+<div class="item releases"><span class="tag tag-releases">Releases</span> Audible Launches AI Audio Discovery Feature <span class="reason">— FT linked The Verge; swapped for Audible newsroom post</span></div>
+<div class="item releases"><span class="tag tag-releases">Releases</span> Google AI Mode Adds Temporary Threads</div>
+<div class="item releases"><span class="tag tag-releases">Releases</span> Google Launches Gemini 4 Neon <span class="reason">— in Gemini app for Pro/Ultra; API pricing dropped</span></div>
+<div class="item releases"><span class="tag tag-releases">Releases</span> Gemini App for Mac Gains Computer Use</div>
+<div class="item releases"><span class="tag tag-releases">Releases</span> Gemini Notebook Turns Notes &amp; Research Into Interactive Sites</div>
+<div class="item releases"><span class="tag tag-releases">Releases</span> Google DeepMind Launches Genie 4 for AI Ultra Subscribers</div>
+<div class="item releases"><span class="tag tag-releases">Releases</span> Gemini Can Now Make Calls and Pay Bills (via TLDR) <span class="reason">— Tasks in Gemini free in 6 countries</span></div>
+<div class="item releases"><span class="tag tag-releases">Releases</span> HeyGen Avatar 6 <span class="reason">— official technical report; Turing-test stat dropped</span></div>
+<div class="item releases"><span class="tag tag-releases">Releases</span> Microsoft MAI Image 2.7 (+ Ignite seven-model umbrella merged) <span class="reason">— (URL needs verification) microsoft.ai 403</span></div>
+<div class="item releases"><span class="tag tag-releases">Releases</span> ChatGPT Live Dictation <span class="reason">— official X post (URL needs verification: 402/partial)</span></div>
+<div class="item releases"><span class="tag tag-releases">Releases</span> OpenAI Launches GPT-6.2 Astra and Sol <span class="reason">— (URL needs verification) openai.com 403</span></div>
+<div class="item releases"><span class="tag tag-releases">Releases</span> Perplexity Computer Multiagent effort level (via TLDR)</div>
+<div class="item releases"><span class="tag tag-releases">Releases</span> Proton Lumo Desktop <span class="reason">— FT linked TechCrunch; swapped for proton.me blog</span></div>
+<div class="item releases"><span class="tag tag-releases">Releases</span> Replit Missions (via TLDR)</div>
+<div class="item releases"><span class="tag tag-releases">Releases</span> Slack Launches Agentic Automation Hub <span class="reason">— official X post</span></div>
+<div class="item releases"><span class="tag tag-releases">Releases</span> Suno Launches Visuals</div>
+<div class="item research"><span class="tag tag-research">Research</span> Will Wright&#x27;s MyMems (2027) <span class="reason">— Verge interview; no official post found</span></div>
+<div class="item research"><span class="tag tag-research">Research</span> Google Labs Stitch Loop <span class="reason">— waitlist</span></div>
+<div class="item resources"><span class="tag tag-resources">Resources</span> OpenAI research acceleration report <span class="reason">— (URL needs verification) openai.com 403</span></div>
+<div class="item resources"><span class="tag tag-resources">Resources</span> AI Explained: Anthropic IPOs, GPT 6.2 Astra Arrives (via YouTube: AI Explained) <span class="reason">— published Nov 19</span></div>
+<div class="item resources"><span class="tag tag-resources">Resources</span> World 2030 (via TLDR) <span class="reason">— Strange Loop Canon simulation</span></div>
+<div class="item random"><span class="tag tag-random">Random</span> Anthropic IPO priced / debuts on Nasdaq (2 FT items merged) <span class="reason">— The Verge; borderline</span></div>
+<h3>❌ Excluded</h3>
+<div class="item excluded"><span class="tag tag-excluded">Excluded</span> Gemini API Tool Retrieval; Perplexity Orchestrator &amp; Context API; Vercel eve; HF x OpenRouter; Microsoft Decision 1.1; Sierra Personal Agent Protocol; Prime Intellect Model Factory <span class="reason">— developer-only</span></div>
+<div class="item excluded"><span class="tag tag-excluded">Excluded</span> Microsoft MAI Code 2, Cyber 2 Flash, Realtime 1, Licensed Weights <span class="reason">— enterprise/developer</span></div>
+<div class="item excluded"><span class="tag tag-excluded">Excluded</span> ChatGPT for Sales; Astra for Law; ChatGPT for Healthcare agents; Devin Apps <span class="reason">— enterprise-only</span></div>
+<div class="item excluded"><span class="tag tag-excluded">Excluded</span> OpenAI Defense-in-Depth; Performance Factory; chip design; CSAM classifier; embedded assessments <span class="reason">— company statements / internal</span></div>
+<div class="item excluded"><span class="tag tag-excluded">Excluded</span> OpenAI scientist study + ChatGPT for Academic Researchers expansion <span class="reason">— niche audience</span></div>
+<div class="item excluded"><span class="tag tag-excluded">Excluded</span> Claude Fable 5.2 black hole physics; GPT-6 Astra Standard Model; Claude protein sequences <span class="reason">— scientific</span></div>
+<div class="item excluded"><span class="tag tag-excluded">Excluded</span> Apple Health AI Usage Study <span class="reason">— health study, close call</span></div>
+<div class="item excluded"><span class="tag tag-excluded">Excluded</span> Tencent Hy4 flash; Sevren Embla 1 <span class="reason">— smaller model launches, close call</span></div>
+<div class="item excluded"><span class="tag tag-excluded">Excluded</span> Anduril/Palmer Luckey cyber warning <span class="reason">— statement</span></div>
+<div class="item excluded"><span class="tag tag-excluded">Excluded</span> Nvidia H200 China halt; Jensen Huang return/petition; Nvidia scarcity allegations (HN) <span class="reason">— business/drama follow-ups</span></div>
+<div class="item excluded"><span class="tag tag-excluded">Excluded</span> California AG sues OpenAI <span class="reason">— court case</span></div>
+<div class="item excluded"><span class="tag tag-excluded">Excluded</span> Google + Blue Origin Project Suncatcher; NVIDIA RTX Spark; Tesla Cybercab; Nvidia Rubin HPC <span class="reason">— hardware</span></div>
+<div class="item excluded"><span class="tag tag-excluded">Excluded</span> Jordan Belfort&#x27;s Tone raises $10M <span class="reason">— funding</span></div>
+<div class="item excluded"><span class="tag tag-excluded">Excluded</span> Kevin Rose SignuDoc <span class="reason">— not AI</span></div>
+<div class="item excluded"><span class="tag tag-excluded">Excluded</span> SNL tech billionaires sketch <span class="reason">— not notable enough for Random</span></div>
+<div class="item excluded"><span class="tag tag-excluded">Excluded</span> Matt Wolfe weekly YouTube recap <span class="reason">— aggregator recap</span></div>
+<div class="item excluded"><span class="tag tag-excluded">Excluded</span> Pre-range items (Nov 13 and earlier) <span class="reason">— covered in last Sunday's post or out of range</span></div>
+<div class="item excluded"><span class="tag tag-excluded">Excluded</span> TLDR research/essays (Quark, 4-bit training, Amdahl, Zvi, METR eval tells, sparse attention, weight-space programming, etc.) <span class="reason">— technical/essays, not resources</span></div>
   </div>
 
   <script>
